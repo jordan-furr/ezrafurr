@@ -4,10 +4,10 @@ import EzraMenu from './components/ezra-menu.vue';
 
 <template>
   <div class="app">
-    <div class="menu">
+    <div class="menu-cont">
       <EzraMenu />
     </div>
-    <div class="page">
+    <div class="page-cont">
       <NuxtPage />
     </div>
   </div>
