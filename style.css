@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 p {
@@ -767,7 +767,6 @@ html,body {
     background-color: black;
     color: white;
     display: flex;
-    position: fixed;
     height: 100%;
     overflow-y: hidden;
     width: 25vw;
@@ -783,6 +782,7 @@ html,body {
     margin-left: 25vw;
     display: flex;
     flex: 1;
+    height: 100%;
     overflow-y: hidden;
 }
 
