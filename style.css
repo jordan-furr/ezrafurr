@@ -769,6 +769,7 @@ html,body {
     display: flex;
     position: fixed;
     height: 100%;
+    overflow-y: hidden;
     width: 25vw;
     border-right: 1px solid #ddd;
 }
@@ -789,6 +790,7 @@ html,body {
     display: flex;
     color: white;
     margin: auto;
+    overflow-y: hidden;
 }
 
 .menu-item {
