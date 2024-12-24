@@ -747,30 +747,46 @@ h6 {
 
 /* PROJECT SPECIFIC */
 
+html,body {
+    background-color: black;
+}
+
 .app {
     display: flex;
     flex-direction: row;
+    background-color: black;
     height: 100vh;
+}
+
+.menu-cont {
+    background-color: black;
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 25vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-right: 1px solid #ddd;
 }
 
 .menu {
     display: flex;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    margin: auto;
+}
+
+.page-cont {
+    margin-left: 25vw;
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
     height: 100vh;
-    background: red;
-    border-right: 1px solid #ddd;
 }
 
 .page {
-    margin-left: 250px;
     display: flex;
-    flex: 1;
-    padding: 1rem;
-    overflow-y: auto;
-    max-height: 100vh;
+    color: white;
+    margin: auto;
 }
 
 .menu-item {
