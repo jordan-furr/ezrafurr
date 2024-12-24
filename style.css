@@ -753,10 +753,14 @@ html,body {
 }
 
 .app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     background-color: black;
-    height: 100vh;
 }
 
 .menu-cont {
@@ -764,10 +768,8 @@ html,body {
     color: white;
     display: flex;
     position: fixed;
+    height: 100%;
     width: 25vw;
-    top: 0;
-    left: 0;
-    height: 100vh;
     border-right: 1px solid #ddd;
 }
 
@@ -781,7 +783,6 @@ html,body {
     display: flex;
     flex: 1;
     overflow-y: hidden;
-    height: 100vh;
 }
 
 .page {
