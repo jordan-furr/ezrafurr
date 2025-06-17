@@ -1,6 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
