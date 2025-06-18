@@ -1,0 +1,15 @@
+.headerCont {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.ezraTitle {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
