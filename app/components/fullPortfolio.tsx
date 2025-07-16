@@ -25,31 +25,33 @@ export default async function fullPortfolio() {
     return (
         <div className={styles.portfolioCont}>
 
-            <section className={styles.scrollCont}>
-                <div className={styles.scrollInner}>
-                    <ul className={styles.scrollTrack}>
-                        {posts.map((art) => (
-                            <li key={art._id} className={styles.scrollItem}>
-                                {art.image && urlFor(art.image) && (
-                                    <Image
-                                        src={urlFor(art.image)?.width(500).height(300).url() || ""}
-                                        alt={art.title}
-                                        width={500}
-                                        height={300}
-                                    />
-                                )}
-                                <p className={styles.artTitle}>{art.title}</p>
-                                <div className={styles.infoLine}>
-                                    {art.date && <p>{art.date}</p>}
-                                    {art.date && art.mediumType && <span>|</span>}
-                                    {art.mediumType && <p>{art.mediumType}</p>}
-                                </div>
+            <ul className={styles.scrollTrack}>
+                {posts.map((art) => (
+                    <li key={art._id} className={styles.scrollItem}>
+                        {art.image && urlFor(art.image) && (
+                            <Image
+                                src={urlFor(art.image)?.url() || ""}
+                                alt={art.title}
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                style={{
+                                    width: 'clamp(280px, 90vw, 620px)',
+                                    height: 'auto',
+                                    objectFit: 'contain'
+                                }}
+                            />
+                        )}
+                        <p className={styles.artTitle}>{art.title}</p>
+                        <div className={styles.infoLine}>
+                            {art.date && <p>{art.date}</p>}
+                            {art.date && art.mediumType && <span>|</span>}
+                            {art.mediumType && <p>{art.mediumType}</p>}
+                        </div>
 
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </section>
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 }

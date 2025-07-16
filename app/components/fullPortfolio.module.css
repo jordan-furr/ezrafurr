@@ -1,38 +1,24 @@
 .portfolioCont {
     padding: 1.5rem;
-}
-
-.scrollCont {
-    position: relative;
-    height: 66vh;
-    overflow: hidden;
-}
-
-.scrollInner {
-    position: sticky;
-    top: 0;
-    height: 66vh;
+    margin-top: 2rem;
+    justify-content: center;
     display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .scrollTrack {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  height: 100%;
-  will-change: transform;
-  overflow: scroll;
-  overflow-y: scroll;
+  flex-direction: column;
+  gap: 5rem;
 }
-
 
 .scrollItem {
   flex-shrink: 0;
+  list-style: none;
 }
 
 .artTitle {
+    margin-top: .25rem;
     font-weight: normal;
 }
 
