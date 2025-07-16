@@ -28,7 +28,7 @@ export default async function fullPortfolio() {
             <ul className={styles.scrollTrack}>
                 {posts.map((art) => (
                     <li key={art._id} className={styles.scrollItem}>
-                        {art.image && urlFor(art.image) && (
+                        {art.image && art.image.asset && urlFor(art.image) && (
                             <Image
                                 src={urlFor(art.image)?.url() || ""}
                                 alt={art.title}
