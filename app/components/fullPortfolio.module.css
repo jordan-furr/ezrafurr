@@ -1,15 +1,16 @@
 .portfolioCont {
-    padding: 1.5rem;
-    margin-top: 2rem;
-    justify-content: center;
-    display: flex;
-    width: 100%;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  display: flex;
+  width: 100%;
 }
 
 .scrollTrack {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4.5rem;
 }
 
 .scrollItem {
@@ -18,12 +19,37 @@
 }
 
 .artTitle {
-    margin-top: .25rem;
-    font-weight: normal;
+  margin-top: .25rem;
+  font-weight: normal;
 }
 
 .infoLine {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 10px) {
+  .ezraEmail {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .portfolioCont {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .ezraEmail {
+    display: block;
+    position: fixed;
+    left: 2.5rem;
+    bottom: 2.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 }
