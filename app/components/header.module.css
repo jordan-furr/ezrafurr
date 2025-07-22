@@ -8,9 +8,20 @@
 .ezraTitle {
     position: absolute;
     left: 50%;
-    top: 10px;
+    top: 1.25rem;
     transform: translateX(-50%);
     font-size: 1.25rem;
     font-weight: 400;
     cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 900px) {
+    .ezraTitle {
+        left: 2.5rem;
+        top: 2.5rem;
+        transform: translateX(0%);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 }

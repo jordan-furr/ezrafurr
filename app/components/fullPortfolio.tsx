@@ -11,7 +11,7 @@ const { projectId, dataset } = client.config();
 const ART_QUERY = `*[
   _type == "art"
   && defined(slug.current)
-]|order(date desc)[0...12]{_id, title, slug, date, image, mediumType}`;
+]|order(date desc)[0...1000]{_id, title, slug, date, image, mediumType}`;
 
 const urlFor = (source: SanityImageSource) =>
     projectId && dataset
@@ -36,7 +36,7 @@ export default async function fullPortfolio() {
                                 height={0}
                                 sizes="100vw"
                                 style={{
-                                    width: 'clamp(280px, 90vw, 620px)',
+                                    width: 'clamp(280px, 90vw, 540px)',
                                     height: 'auto',
                                     objectFit: 'contain'
                                 }}
@@ -52,6 +52,10 @@ export default async function fullPortfolio() {
                     </li>
                 ))}
             </ul>
+            <div className={styles.ezraEmail}>
+                <p>@ezra.geo</p>
+                <p>georgedfurr@gmail.com</p>
+            </div>
         </div>
     );
 }
