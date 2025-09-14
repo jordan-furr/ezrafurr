@@ -1,21 +1,27 @@
 .portfolioCont {
-  padding: 1.5rem;
-  margin-top: 3rem;
+  padding-top: 6rem;
   margin-bottom: 3rem;
   justify-content: center;
   display: flex;
   width: 100%;
 }
 
-.scrollTrack {
-  display: flex;
-  flex-direction: column;
-  gap: 4.5rem;
+.portfolioList {
+  width: 92vw;
+  margin: auto;
+  column-count: 2;
+  column-gap: 4vw;
 }
 
-.scrollItem {
-  flex-shrink: 0;
+.portfolioList>* {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+
+.artItem {
   list-style: none;
+  margin-bottom: 1.5rem;
 }
 
 .artTitle {
@@ -29,12 +35,6 @@
   gap: 8px;
 }
 
-@media (min-width: 10px) {
-  .ezraEmail {
-    display: none;
-  }
-}
-
 @media (min-width: 900px) {
   .portfolioCont {
     margin-top: 1rem;
@@ -42,14 +42,8 @@
 }
 
 @media (min-width: 1050px) {
-  .ezraEmail {
-    display: block;
-    position: fixed;
-    left: 2.5rem;
-    bottom: 2.5rem;
-    font-size: 1rem;
-    font-weight: 400;
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .portfolioList {
+    width: 75vw;
+    column-gap: 2rem;
   }
 }

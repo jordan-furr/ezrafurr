@@ -1,6 +1,8 @@
 import styles from "./fullPortfolio.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
+
 
 import imageUrlBuilder from "@sanity/image-url";
 import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
@@ -24,38 +26,26 @@ export default async function fullPortfolio() {
     const posts = await client.fetch<SanityDocument[]>(ART_QUERY, {}, options);
     return (
         <div className={styles.portfolioCont}>
-
-            <ul className={styles.scrollTrack}>
-                {posts.map((art) => (
-                    <li key={art._id} className={styles.scrollItem}>
-                        {art.image && art.image.asset && urlFor(art.image) && (
-                            <Image
-                                src={urlFor(art.image)?.url() || ""}
-                                alt={art.title}
-                                width={0}
-                                height={0}
-                                sizes="100vw"
-                                style={{
-                                    width: 'clamp(280px, 90vw, 540px)',
-                                    height: 'auto',
-                                    objectFit: 'contain'
-                                }}
-                            />
-                        )}
-                        <p className={styles.artTitle}>{art.title}</p>
-                        <div className={styles.infoLine}>
-                            {art.date && <p>{art.date}</p>}
-                            {art.date && art.mediumType && <span>|</span>}
-                            {art.mediumType && <p>{art.mediumType}</p>}
-                        </div>
-
-                    </li>
-                ))}
-            </ul>
-            <div className={styles.ezraEmail}>
-                <p>@ezra.geo</p>
-                <p>georgedfurr@gmail.com</p>
-            </div>
+                <div className={styles.portfolioList}>
+                    {posts.map((art) => (
+                        <li key={art._id} className={styles.artItem}>
+                            {art.image && art.image.asset && urlFor(art.image) && (
+                                <Image
+                                    src={urlFor(art.image)?.url() || ""}
+                                    alt={art.title}
+                                    width={0}
+                                    height={0}
+                                    sizes="100vw"
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        objectFit: 'contain'
+                                    }}
+                                />
+                            )}
+                        </li>
+                    ))}
+                </div>
         </div>
     );
 }
