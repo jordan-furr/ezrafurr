@@ -1,27 +1,51 @@
 .headerCont {
     position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ezraFooter {
+  position: relative;
+  padding: 2.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .ezraTitle {
-    position: absolute;
-    left: 50%;
-    top: 1.25rem;
-    transform: translateX(-50%);
+    position: relative;
+    margin: 0;
+    padding: 1rem;
     font-size: 1.25rem;
     font-weight: 400;
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.ezraNav {
+    position: absolute;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
 @media (min-width: 900px) {
+    .headerCont {
+        justify-content: flex-start;
+    }
+
     .ezraTitle {
-        left: 2.5rem;
-        top: 2.5rem;
-        transform: translateX(0%);
+        padding: 2.5rem;
         font-size: 1.5rem;
         cursor: pointer;
     }
+
 }
