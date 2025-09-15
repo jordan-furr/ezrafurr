@@ -166,3 +166,54 @@ a.secondary {
     filter: invert();
   }
 }
+
+
+
+.portfolioCont {
+  padding-top: 6rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.portfolioList {
+  width: 92vw;
+  margin: auto;
+  column-count: 2;
+  column-gap: 4vw;
+}
+
+.portfolioList>* {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+
+.artItem {
+  margin-bottom: 1.5rem;
+}
+
+.artTitle {
+  margin-top: .25rem;
+  font-weight: normal;
+}
+
+.infoLine {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 900px) {
+  .portfolioCont {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .portfolioList {
+    width: 70vw;
+    column-gap: 2rem;
+  }
+}

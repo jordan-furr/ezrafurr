@@ -5,8 +5,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -15,7 +15,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   margin: 0;
-  
+
 }
 
 html {
@@ -46,12 +46,64 @@ a {
   text-decoration: none;
 }
 
-.under-hov:hover{
+.under-hov:hover {
   text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+
+
+.artPage {
+  padding-top: 6rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.artCont {
+  width: 90%;
+  margin: auto;
+}
+
+.artItem {
+  margin-bottom: 3rem;
+}
+
+
+
+@media (min-width: 600px) {
+  .artCont {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .artCont {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1040px) {
+  .artCont {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .artCont {
+    width: 46%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .artCont {
+    width: 38%;
+  }
+}
+
+@media (min-width: 1450px) {
+  .artCont {
+    width: 33%;
   }
 }
