@@ -37,6 +37,13 @@
 }
 
 
+@media (max-width: 899px) {
+    .ezraFooter {
+        padding-left: 4vw;
+    }
+
+}
+
 @media (min-width: 900px) {
     .headerCont {
         justify-content: flex-start;

@@ -194,17 +194,6 @@ a.secondary {
   margin-bottom: 1.5rem;
 }
 
-.artTitle {
-  margin-top: .25rem;
-  font-weight: normal;
-}
-
-.infoLine {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 @media (min-width: 900px) {
   .portfolioCont {
     margin-top: 1rem;

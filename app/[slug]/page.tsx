@@ -37,11 +37,32 @@ export default async function Page({
                             }}
                         />
                     )}
-                    {art?.title ?? null}
-                    {art?.mediumType ?? null}
-                    {art?.date ?? null}
-                    {art?.body ?? null}
-                    {art?.price ?? null}
+                    <div className="titleContact">
+                        <div className="artTitle">
+                            {art?.title ?? "Untitled"}
+                        </div>
+
+                        <Link href={"mailto:georgedfurr@gmail.com"}>
+                        <p className="under-hov contact">Contact</p>
+                        </Link>
+
+                    </div>
+
+                    <div className="infoLine">
+                        <span>{art?.date ?? null}</span>
+                        <span>|</span>
+                        <span>{art?.mediumType ?? null}</span>
+                    </div>
+                    <div className="aboutCont">
+                        {art?.body ?? null}
+                    </div>
+                    <div className="priceCont">
+                        <span>Price:</span>
+                        <span>$</span>
+                        <span>{art?.price ?? "Unlisted"}</span>
+
+                    </div>
+
                 </article>
                 <Link href="/" className="under-hov">&larr; Return to gallery</Link>
             </div>
