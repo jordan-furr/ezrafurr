@@ -34,6 +34,7 @@ export type Art = {
     crop?: SanityImageCrop;
     _type: "image";
   };
+  alt?: string;
   mediumType?: string;
   body?: string;
   price?: number;
