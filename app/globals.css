@@ -70,6 +70,43 @@ a {
   margin-bottom: 3rem;
 }
 
+.titleContact {
+  margin-top: .75rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.artTitle {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.contact {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.infoLine {
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aboutCont {
+  margin-top: 2rem;
+}
+
+.priceCont {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 
 @media (min-width: 600px) {
@@ -82,6 +119,7 @@ a {
   .artCont {
     width: 70%;
   }
+  
 }
 
 @media (min-width: 1040px) {
