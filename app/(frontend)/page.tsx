@@ -28,7 +28,7 @@ export default async function Home() {
     <div className={styles.portfolioCont}>
       <div className={styles.portfolioList}>
         {posts.map((art) => (
-          <Link href={`/${art.slug!.current}`}>
+          <Link href={`/${art.slug!.current}`} key={art._id}>
             <article className={styles.artItem}>
               {art.image && art.image.asset && urlFor(art.image) && (
                 <Image

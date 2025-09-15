@@ -1,0 +1,68 @@
+[
+  {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "image",
+        "type": "image"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "alt",
+        "type": "string",
+        "title": "Alternative text"
+      },
+      {
+        "name": "mediumType",
+        "type": "string"
+      },
+      {
+        "name": "body",
+        "type": "string"
+      },
+      {
+        "name": "price",
+        "type": "number"
+      }
+    ],
+    "name": "art",
+    "type": "document"
+  }
+]
