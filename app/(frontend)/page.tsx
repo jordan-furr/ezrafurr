@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { type SanityDocument } from "next-sanity";
 import Link from "next/link";
+import Sidebar from "../components/sidebar";
 
 
 import imageUrlBuilder from "@sanity/image-url";
@@ -26,6 +27,9 @@ export default async function Home() {
   const posts = await client.fetch<SanityDocument[]>(ART_QUERY, {}, options);
   return (
     <div className={styles.portfolioCont}>
+      <div className="sidebarCont">
+        <Sidebar />
+      </div>
       <div className={styles.portfolioList}>
         {posts.map((art) => (
           <Link href={`/${art.slug!.current}`} key={art._id}>

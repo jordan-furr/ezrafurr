@@ -33,6 +33,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.15rem;
 }
 
 * {
@@ -46,12 +47,40 @@ a {
   text-decoration: none;
 }
 
-.under-hov:hover {
-  text-decoration: underline;
+.mt4 {
+  margin-top: 1.5rem;
+}
+
+.mb4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb1 {
+  margin-bottom: .25rem;
 }
 
 
 
+
+
+
+/* PROJECT */
+
+.sidebarCont {
+  position: fixed;
+  padding-left: 2.5rem;
+  left: 0;
+  width: 15vw;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
 
 .artPage {
   padding-top: 6rem;
@@ -106,6 +135,44 @@ a {
   gap: 6px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+
+/*updates*/
+
+.page {
+  padding-top: 6rem;
+  margin-bottom: 5rem;
+  display: flex;
+  margin: auto;
+  width: 66vw;
+  flex-direction: column;
+}
+
+.postsContainer {
+  padding-top: 1rem;
+}
+
+.postPrev {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: .5rem;
+}
+
+.postTitle {
+  text-decoration: underline;
+}
+
+.postPrev:hover {
+  color: blue;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
 
 
 

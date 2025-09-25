@@ -171,7 +171,7 @@ a.secondary {
 
 .portfolioCont {
   padding-top: 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   justify-content: center;
   display: flex;
   width: 100%;
@@ -202,7 +202,7 @@ a.secondary {
 
 @media (min-width: 1050px) {
   .portfolioList {
-    width: 70vw;
+    width: 66vw;
     column-gap: 2rem;
   }
 }
