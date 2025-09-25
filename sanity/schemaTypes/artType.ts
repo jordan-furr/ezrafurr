@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import { defineArrayMember, defineField, defineType } from 'sanity'
 
 export const artType = defineType({
   name: 'art',
@@ -32,6 +32,11 @@ export const artType = defineType({
 
         return !value && parent?.asset?._ref ? 'Alt text is required when an image is present' : true
       }),
+    }),
+    defineField({
+      name: 'categories',
+      type: 'array',
+      of: [defineArrayMember({ type: 'reference', to: { type: 'category' } })],
     }),
     defineField({
       name: 'mediumType',
